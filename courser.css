@@ -1,0 +1,39 @@
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.courser {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+#div1 {
+  background-image: url("./assets/Background.jpg");
+  height: 200px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+}
+#div2 {
+  height: 400px;
+  width: 80%;
+  border: solid 1px;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  margin-top: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#card_name {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
