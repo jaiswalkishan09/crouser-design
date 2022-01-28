@@ -37,3 +37,82 @@ body {
   text-align: center;
   padding-top: 10px;
 }
+
+.carousel {
+  align-items: center;
+  display: flex;
+  margin: 2rem auto;
+  position: absolute;
+  top: 5%;
+  /* margin-left: 100px; */
+  padding-left: 100px;
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.carousel__images {
+  align-items: center;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.25s;
+}
+.carousel__images img {
+  border-radius: 5px;
+  height: 250px;
+  width: 150px;
+  top: 0;
+}
+/* .d {
+  height: 250px;
+  width: 150px;
+  margin-top: 38%;
+  right: 30%;
+}
+.d2 {
+  position: absolute;
+  height: 250px;
+  width: 150px;
+  top: 10% !important;
+  left: 60%;
+  z-index: 2;
+}
+.d3 {
+  position: absolute;
+  height: 200px;
+  width: 150px;
+  left: 100%;
+  top: 15%;
+  z-index: 1;
+} */
+
+.active {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+  height: 300px !important;
+  width: 200px !important;
+  z-index: 3;
+}
+.carousel__button {
+  background: teal;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 3rem;
+  opacity: 0.25;
+  position: absolute;
+  transition: opacity 0.25s;
+  width: 3rem;
+  z-index: 1;
+}
+.previous {
+  left: 100px;
+}
+.next {
+  right: 200px;
+}
+hover {
+  opacity: 0.5;
+}

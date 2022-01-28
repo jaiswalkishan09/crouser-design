@@ -11,7 +11,6 @@
     <meta name="author" content="Kishan Jaiswal" />
     <title>Courser</title>
     <link rel="stylesheet" href="courser.css" />
-    <script src="courser.js"></script>
   </head>
   <body>
     <div class="topnav">
@@ -25,8 +24,20 @@
     <div class="courser">
       <div id="div1">
         <h1 id="card_name">Digital Card Details</h1>
-        <div id="div2"></div>
+
+        <div id="div2">
+          <div class="carousel">
+            <button class="carousel__button previous" id="previous"><</button>
+            <div class="carousel__images">
+              <img class="active" src="assets/Page1.jpg" alt="" />
+              <img class="d2" src="assets/Page2.jpg" alt="" />
+              <img class="d3" src="assets/Page3.jpg" alt="" />
+            </div>
+            <button class="carousel__button next" id="next">></button>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="courser.js"></script>
   </body>
 </html>
