@@ -1,3 +1,24 @@
+function myFunction(x) {
+  const display = document.querySelector(".column");
+  const y = document.querySelector("#div2");
+  const d = document.querySelector(".column1");
+  if (x.matches) {
+    y.style.height = "800px";
+    y.style.top = "250%";
+    d.classList.remove("display");
+    display.classList.add("display");
+  } else {
+    y.style.height = "400px";
+    y.style.top = "150%";
+    d.classList.add("display");
+    display.classList.remove("display");
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)");
+myFunction(x); // Call listener function at run time
+// x.addListener(myFunction)
+
 const carouselImages = document.querySelector(".carousel__images");
 const images = document.querySelectorAll(".carousel__images img");
 const carouselButtons = document.querySelectorAll(".carousel__button");
@@ -36,11 +57,11 @@ function indexChange(index) {
 indexChange(0);
 
 // Disable context menu
-window.oncontextmenu = function (event) {
-  event.preventDefault();
-  event.stopPropagation();
-  return false;
-};
+// window.oncontextmenu = function (event) {
+//   event.preventDefault();
+//   event.stopPropagation();
+//   return false;
+// };
 
 function touchStart(index) {
   return function (event) {
