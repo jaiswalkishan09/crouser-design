@@ -50,7 +50,6 @@ function touchStart(index) {
 
     // https://css-tricks.com/using-requestanimationframe/
     animationID = requestAnimationFrame(animation);
-    // slider.classList.add("grabbing");
   };
 }
 
@@ -71,8 +70,6 @@ function touchEnd() {
     indexChange(currentIndex);
     setPositionP();
   }
-
-  // slider.classList.remove("grabbing");
 }
 
 function touchMove(event) {
